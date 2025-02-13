@@ -75,7 +75,7 @@ button:hover {
     display: none;
 }
 .cover-page {
-    background-image: url('images/valentines\ cover\ page.png'); 
+    background-image: url('public/images/valentines\ cover\ page.png'); 
     background-size: cover;
     background-position: center;
     height: 100vh;
