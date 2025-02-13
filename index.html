@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+<body>
+    <div class="cover-page" id="cover-page">
+        <h1>Happy Valentine's Day!</h1>
+        <p>only baobaos can enter.</p>
+        <button onclick="goToQuiz()">I am a baoabo</button>
+    </div>
+
+    <div class="container hidden" id="quiz-calculator-page">
+
+        <img src="public/images/hearts gif.gif" alt="Hearts Animation" class="hearts-gif">
+
+        <img src="public/images/baobaos image 1.png" alt="Corner Image" class="corner-image top-left">
+        <img src="public/images/baobaos image 2.png" alt="Corner Image" class="corner-image top-right">
+        <img src="public/images/baobaos image 3.png" alt="Corner Image" class="corner-image bottom-left">
+        <img src="public/images/baobaos image 4.png" alt="Corner Image" class="corner-image bottom-right">
+
+
+        <div class="card1" id="quiz-card">
+            <h1>Valentine's Day Quiz</h1>
+            <p><strong>When is our anniversary?</strong></p>
+            <p>Hint: dd/mm/yyyy format</p>
+            
+            <input type="text" id="answer" placeholder="Your answer here">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="error-message" style="color: red; display: none;">U STUPID BAO! Try again!!!!!</p>
+        </div>
+
+        <div class="card2 hidden" id="love-calculator">
+            <h1>Love Calculator</h1>
+            <p>Enter your names to calculate your love score!</p>
+            <input type="text" id="name1" placeholder="Your name" maxlength="20" size="20">
+            <input type="text" id="name2" placeholder="Their name" maxlength="20" size="20">
+            <p><button onclick="calculateLove()">Calculate</button></p>
+            <p id="result"></p>
+            <button onclick="goToValentinePage()" id="next-valentine" class="hidden">Next</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="valentine-page">
+        <div class="card1">
+            <h1>Will you be my Valentine?</h1>
+            <p><img src="public/images/cute girl.gif" class="girl"></p>
+            <button onclick="acceptValentine()">Yes</button>
+            <button onclick="declineValentine()">No</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="valentine-letter-page">
+        <div class="card3">
+            <h1>The Letter</h1>
+            <p>Hii baobao,</p>
+            <p>I love uu❤️ Thank you for being by my side for the past 5 months hehe🥰. I know these past month in LDR again has been hard
+                and I wanna thank you for putting in effort and trying your best! I do see your efforts. I hope that we can continue to overcome
+                all the problems that we may face and come out stronger and happier. I rmb you once said that every relationship is going to be 
+                hard and it's who you choose to fight with. And these days I've been thinking about it quite alot and I believe that it is you
+                who I want to fight with. You actually listen to me when I'm unhappy, understands instead of gaslight, and knows that you need
+                to act more! Soon, you can graduate from "I'm just a guy" and become "I've been trained. I know better" ehhehe. And because I 
+                love and care for you, I don't want to prolong this LDR even more..I want to come back to SG after I graduate🥰.
+            </p>
+            <p>Happy Valentine's Day!</p>
+        </div>
+    </div>
+
+    <script src="public/js/script.js"></script>
+</body>
+</html>
